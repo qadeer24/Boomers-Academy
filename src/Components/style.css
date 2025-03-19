@@ -1,12 +1,13 @@
 /* // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name */
 
-*{
+* {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 
 }
-.header{
+
+.header {
     height: 7vh;
     width: 100vw;
     background-color: #100E17;
@@ -15,54 +16,64 @@
     color: #fff;
     font-weight: 500;
 }
-.Registration-Header-Right-Side{
+
+.Registration-Header-Right-Side {
     cursor: pointer;
     display: flex;
-    margin: 10px 10px 10px -117px;
+    margin: 10px 10px 10px 20px;
     font-weight: 600;
 }
-.Registration-Header-Right-Side-img{
-    height:  25px;
-    width: 25px;
+
+.Registration-Header-Right-Side-img {
+    height: 20px;
+    width: 20px;
     background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\phone-solid.svg');
     margin-right: 10px;
+    margin-top: 2px;
 }
-.Registration-Header-left-Side{
+
+.Registration-Header-left-Side {
     display: flex;
     margin-top: 10px;
-    padding-left: 200px;
+    padding-left: 37vw;
     font-weight: 600;
 }
-.Registration-Header-left-Side-col1-img{
+
+.Registration-Header-left-Side-col1-img {
     cursor: pointer;
-    height:  18px;
+    height: 18px;
     width: 18px;
     background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\padlock.png');
     margin-right: 10px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
-.Registration-Header-left-Side-col2-img{
+
+.Registration-Header-left-Side-col2-img {
     cursor: pointer;
-    height:  25px;
-    width: 25px;
+    height: 21px;
+    width: 21px;
     background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Exit.svg');
     margin-right: 10px;
 }
-.form-hero-section{
+
+.form-hero-section {
     margin-top: 4.5vh;
     margin-left: 15vw;
 }
-.register-Form-logo-area{
+
+.register-Form-logo-area {
     width: 33vw;
     height: 85vh;
     background-color: #EC1C27;
     padding-top: 11vh;
 }
-.register-Form-logo{
+
+.register-Form-logo {
     width: 100%;
     text-align: center;
 }
-.register-Form-logo-button{
+
+.register-Form-logo-button {
     width: 13vw;
     color: #EC1C27;
     font-size: larger;
@@ -70,24 +81,28 @@
     margin-left: 10vw;
     margin-top: 3vh;
 }
-.move-to-login-page{
+
+.move-to-login-page {
     color: #fff;
     text-align: center;
 }
-.Register-Form{
+
+.Register-Form {
     width: 33vw;
     height: 85vh;
     color: #686868;
     font-weight: 500;
-    box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
-    -moz-box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
+    box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
 }
-.logo-img{
+
+.logo-img {
     height: 16.6vh;
     width: 12.3vw;
 }
-.logo-text{
+
+.logo-text {
     padding-left: 6vw;
     width: 28vw;
     padding-top: 13px;
@@ -95,10 +110,12 @@
     line-height: normal;
     font-weight: 700;
 }
-.Register-Form span{
+
+.Register-Form span {
     width: 35vw;
 }
-.form-input{
+
+.form-input {
     border-top: none;
     border-right: none;
     border-left: none;
@@ -106,79 +123,69 @@
     width: 27vw;
     height: 4vh;
 }
-.registration-input{
+
+.registration-input {
     margin-left: 3vw;
 }
-.form-submit-button-before{
+
+.form-submit-button-before {
     margin-left: 21px;
     width: 13vw;
     font-weight: 500;
-    background-color: #E2E2E2; 
+    background-color: #E2E2E2;
     margin-left: 10vw;
 
 }
-.form-submit-button{
+
+.form-submit-button {
     margin-left: 21px;
     width: 13vw;
     font-weight: 500;
     background-color: #EC1C27;
-    color: white;     
+    color: white;
     margin-left: 10vw;
 
 }
-.file-upload{
-    height: 9vh;
-    width: 30vw;
-    border-radius: 8px;
-    padding-top: 8px;
-    cursor: pointer;
-    margin-left: 21px;
-    background-color: #ece9e9;
-    text-align: center;
-}
-.file-upload-img{
-    margin-left: 190px;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\file-upload.png');
-    height: 3.5vh;
-    width: 3.5vh;
-}
-.file-upload-text{
-    color: #100E17;
-}
-.checkbox-text{
+.checkbox-text {
     font-size: 14px;
 }
-.checkbox-div{
+
+.checkbox-div {
     margin-left: 3vw;
 }
-.checkbox-border{
+
+.checkbox-border {
     border: 2px solid #AEAEAE;
 }
 
 /* Login page */
 
-.login-inputs{
+.login-inputs {
     margin-top: 22vh;
 }
 
 
 /* Landing Page */
-.carousel-images{
+.carousel-images {
     object-fit: cover;
 }
-.hero-overlay{
-    position: absolute; /* Stays in place */
+
+.hero-overlay {
+    position: absolute;
+    /* Stays in place */
     top: 0;
     left: 0;
     height: 100vh;
+    width: 98.9vw;
     color: white;
     background-color: transparent;
     background-image: linear-gradient(194deg, #000000 0%, #4B2E2E96 85%);
     opacity: 0.81;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.header-landing-page{
-    height: 7vh;
+
+.header-landing-page {
+    height: 8vh;
     width: 98.8vw;
     background: none;
     display: flex;
@@ -186,40 +193,50 @@
     color: #fff;
     font-weight: 500;
     border-bottom: 1px solid white;
+    padding-top: 0.5vh;
 }
-.landing-page-nav-bar{
+
+.landing-page-nav-bar {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
 }
-.landing-page-nav-bar img{
+
+.landing-page-nav-bar img {
     height: 17vh;
     width: 9vw;
 }
-.landing-page-nav-bar-link{
+
+.landing-page-nav-bar-link {
     text-decoration: none;
     color: #fff;
 }
-.landing-page-nav-bar-link:hover{
+
+.landing-page-nav-bar-link:hover {
     color: #F9CC3E;
 }
-.hero-sec-heading{
+
+.hero-sec-heading {
     font-weight: 600;
 }
-.hero-sec-button{
-    height: 7vh;
-    width: 14vw;
+
+.hero-sec-button {
+    height: 3rem;
+    width: 13rem;
     border-radius: 25px;
     border: none;
     background-color: #EC1C27;
     color: #fff;
     font-weight: 600;
 }
-.hero-sec-button:hover{
+
+.hero-sec-button:hover {
     background-color: #000000;
 }
-.overlay-2{
-    position: absolute; /* Stays in place */
+
+.overlay-2 {
+    position: absolute;
+    /* Stays in place */
     top: 85vh;
     left: 0;
     height: 60vh;
@@ -228,46 +245,59 @@
     display: flex;
     padding-left: 8vw;
 }
-.overlay-2-sec{
+
+.overlay-2-sec {
     height: 54vh;
     width: 25vw;
     border-radius: 7px;
     background-color: #fff;
-    box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
-    -webkit-box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
-    -moz-box-shadow: 1px -1px 28px 0px rgba(0,0,0,0.11);
+    padding-top: 6vh;
+    box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
 }
-.overlay-2-sec img{
+.overlay-2-sec-margin{
+    margin: 0 3rem;
+}
+.overlay-2-sec img {
     height: 7vh;
     width: 10vw;
 }
-.hero-sec-button-2{
-    height: 7vh;
-    width: 14vw;
+
+.hero-sec-button-2 {
+    height: 3rem;
+    width: 13rem;
     border-radius: 25px;
+    margin-top: 1vh;
     border: none;
     background-color: #EC1C27;
     color: #fff;
     font-weight: 600;
 }
-.hero-sec-button-2:hover{
+
+.hero-sec-button-2:hover {
     background-color: #fff;
     color: #000;
     border: 1px solid #EC1C27;
 }
-.Section-2{
+
+.Section-2 {
     margin-top: 55vh;
 }
-.Section-2 h1{
+
+.Section-2 h1 {
     font-weight: 600;
     font-size: 41px;
 }
-.Section-2 h5{
+
+.Section-2 h5 {
     color: #464646;
 }
-.section-2-heading{
+
+.section-2-heading {
     margin-left: 34.5vw;
 }
+
 .section-2-overlay-1-1 {
     position: absolute;
     bottom: 0;
@@ -276,6 +306,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-1-2 {
     position: absolute;
     bottom: 0;
@@ -284,7 +315,8 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-1-3{
+
+.section-2-overlay-1-3 {
     position: absolute;
     bottom: 0;
     left: 8vw;
@@ -292,6 +324,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
+
 .section-2-overlay-1-4 {
     position: absolute;
     bottom: 0;
@@ -300,6 +333,7 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-1-5 {
     position: absolute;
     bottom: 0;
@@ -308,7 +342,8 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-1-6{
+
+.section-2-overlay-1-6 {
     position: absolute;
     bottom: 0;
     left: 21.5vw;
@@ -316,6 +351,7 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
+
 .section-2-overlay-2-1 {
     position: absolute;
     bottom: 0;
@@ -324,6 +360,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-2-2 {
     position: absolute;
     bottom: 0;
@@ -332,7 +369,8 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-2-3{
+
+.section-2-overlay-2-3 {
     position: absolute;
     bottom: 0;
     left: 36.2vw;
@@ -340,6 +378,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
+
 .section-2-overlay-2-4 {
     position: absolute;
     bottom: 0;
@@ -348,6 +387,7 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-2-5 {
     position: absolute;
     bottom: 0;
@@ -356,7 +396,8 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-2-6{
+
+.section-2-overlay-2-6 {
     position: absolute;
     bottom: 0;
     left: 49.8vw;
@@ -364,6 +405,7 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
+
 .section-2-overlay-3-1 {
     position: absolute;
     bottom: 0;
@@ -372,6 +414,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-3-2 {
     position: absolute;
     bottom: 0;
@@ -380,7 +423,8 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-3-3{
+
+.section-2-overlay-3-3 {
     position: absolute;
     bottom: 0;
     left: 64.4vw;
@@ -388,6 +432,7 @@
     border-left: 14vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
+
 .section-2-overlay-3-4 {
     position: absolute;
     bottom: 0;
@@ -396,6 +441,7 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.3);
     border-top: 80px solid #00000000;
 }
+
 .section-2-overlay-3-5 {
     position: absolute;
     bottom: 0;
@@ -404,7 +450,8 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.5);
     border-top: 55px solid #00000000;
 }
-.section-2-overlay-3-6{
+
+.section-2-overlay-3-6 {
     position: absolute;
     bottom: 0;
     left: 78vw;
@@ -412,79 +459,662 @@
     border-right: 13vw solid rgba(255, 255, 255, 0.7);
     border-top: 38px solid #00000000;
 }
-.landing-page-line{
+
+.landing-page-line {
     width: 12vw;
     height: 1px;
     background-color: #BBBBBB;
 }
-.landing-page-sec-1-img-1{
+
+.landing-page-sec-1-img-1 {
     height: 5vh;
     width: 5vw;
 }
-.section-2-images{
+
+.section-2-images {
     margin-left: 8vw;
     margin-right: 8vw;
     margin-top: 7vh;
     display: flex;
     justify-content: space-between;
 }
-.section-2-images-sec{
+
+.section-2-images-sec {
     height: 74vh;
     width: 26.5vw;
-    background-color: #E2E2E2;
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 30px -9px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 30px -9px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 2px 30px -9px rgba(0, 0, 0, 0.16);
+    text-decoration: none;
 }
-.section-2-images-sec img{
+
+.section-2-images-sec img {
     width: 100%;
     height: 35vh;
     object-fit: cover;
 }
-.footer-sec-1{
+.Section-2-image-overlay{
+    display: block;
+}
+.Section-3 {
+    height: 120vh;
+    width: 98.9vw;
+    background-color: #F6F6F6;
+    margin-top: 13vh;
+    display: flex;
+    padding-top: 20vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.Section-3-text{
+    margin: 0 3vw;
+}
+.Section-3-text h2 {
+    font-weight: 600;
+}
+
+.Section-3-text p {
+    font-size: 16px;
+    color: #686868;
+}
+.Section-3-img{
+    margin: 0 10vh;
+}
+.Section-3-img img {
+    height: 78vh;
+    width: 30vw;
+    border-radius: 16px;
+}
+.Count-Down-boxes{
+    display: flex;
+}
+.Count-Down-boxes-responsive{
+    display: flex;
+}
+.Count-Down {
+    height: 17vh;
+    width: 9vw;
+    background-color: #2E2E2E;
+    color: #fff;
+    border-radius: 11px;
+    margin: 0 1vw;
+}
+
+.Count-Down p {
+    font-size: 24px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.Section-3-button {
+    height: 3rem;
+    width: 13rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #EC1C27;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Section-3-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.Section-4 {
+    height: 75vh;
+    width: 98.9vw;
+    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\section-2-image-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+    color: #fff;
+}
+
+.section-4-overlay {
+    background-image: linear-gradient(194deg, #000000 0%, #4B2E2E96 85%);
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    padding-top: 16vh;
+}
+
+.Section-4-text {
+    position: absolute;
+    top: 408vh;
+}
+
+.section-4-overlay h1 {
+    font-weight: 600;
+}
+
+.section-4-overlay h5 {
+    font-weight: 600;
+}
+
+.Section-4-p {
+    width: 78vw;
+    padding-left: 23vw;
+}
+
+.Section-4-text-padding {
+    padding-left: 29vw;
+    width: 71vw;
+}
+
+.Section-5 {
+    width: 98.9vw;
+    display: flex;
+}
+
+.Section-5-left {
+    padding-left: 6vw;
+    padding-right: 3vw;
+    padding-top: 13vh;
+    padding-bottom: 10vh;
+    width: 50%;
+}
+
+.Section-5-right {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 13vh;
+    padding-bottom: 0;
+    width: 50%;
+    background-color: #F5F5F5;
+}
+
+.Section-5 h2 {
+    font-weight: 600;
+}
+
+.Section-5-left img {
+    height: 2vh;
+}
+
+.Section-5-left h5 {
+    font-weight: 600;
+}
+
+.Section-5-form {
+    box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
+    padding: 13vh 5vh 13vh 10vh;
+}
+
+.Section-5-form h6 {
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+.Section-5-Input-Name {
+    height: 7vh;
+    width: 25vw;
+    border-radius: 12px;
+    border: 1px solid grey;
+    padding-left: 1vw;
+    background-color: #F0F0F0;
+}
+
+.Section-5-Input-Name::placeholder {
+    color: #000;
+}
+
+.Section-5-button {
+    height: 3rem;
+    width: 13rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #EC1C27;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Section-5-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.Section-6 {
+    display: flex;
+    padding-left: 9vw;
+    position: absolute;
+    top: 653vh;
+}
+
+.Section-6-bg {
+    background-color: #F5F5F5;
+    padding-left: 76vw;
+}
+
+.Section-6-bg-img {
+    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22vw;
+    height: 37vh;
+    opacity: 0.2;
+}
+
+.Section-6-bg-img img {
+    opacity: 0.4;
+    height: 40vh;
+}
+
+.section-6-img {
+    padding: 2vh;
+    border-radius: 50%;
+    background-color: #EC1C27;
+    height: 10vh;
+}
+
+.Section-6 img {
+    height: 6vh;
+}
+
+.Section-6-text {
+    width: 32vw;
+}
+
+.Section-6-text h5 {
+    font-weight: 600;
+}
+
+.Section-6-input {
+    height: 6vh;
+    width: 26vw;
+    border-radius: 25px;
+    border: 1px solid #AEAEAE;
+    padding-left: 1vw;
+    margin-top: 3.6vh;
+}
+
+.Section-6-button {
+    height: 6vh;
+    width: 10vw;
+    border-radius: 25px;
+    border: none;
+    background-color: #EC1C27;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Section-6-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-sec-1 {
     display: flex;
     justify-content: space-evenly;
     height: 80vh;
     border-bottom: 1px solid white;
     padding-top: 15vh;
 }
-.footer-sec-1 h3{
+
+.footer-sec-1 h3 {
     color: #F9CC3E;
     font-weight: 600;
 }
-.footer-sec-1 p{
+
+.footer-sec-1 p {
     font-weight: 500;
 }
-.footer-sec-1-col-1{
+
+.footer-sec-1-col-1 {
     width: 25vw;
 }
-.footer-sec-1-col-1 p{
+
+.footer-sec-1-col-1 p {
     line-height: 5.5vh;
 }
-.footer-sec-1-col-1 h3{
+
+.footer-sec-1-col-1 h3 {
     margin-bottom: 4vh;
 }
-.footer-sec-1-col-3{
+
+.footer-sec-1-col-3 {
     margin-left: 3vw;
     margin-right: 3vw;
 }
-.footer-sec-1-col-4{
+
+.footer-sec-1-col-4 {
     width: 20vw;
 }
-.footer-sec-1-same-css p{
+
+.footer-sec-1-same-css p {
     cursor: pointer;
 }
+
 .footer-sec-1-same-css p:hover {
     color: #F9CC3E;
 }
-.footer-sec-1-same-css h3{
+
+.footer-sec-1-same-css h3 {
     margin-bottom: 9vh;
 }
 
-.footer-sec-2{
+.footer-sec-2 {
     height: 80vh;
     border-bottom: 1px solid white;
+    text-align: center;
 }
-
-.footer-sec-3{
+.footer-sec-2-text{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.footer-sec-3 {
     height: 15vh;
     display: flex;
     justify-content: space-between;
+}
+.footer-sec-3-left{
+    margin-left: 7vw;
+}
+.footer-sec-3-right{
+    margin-top: 0vh;
+    margin-right: 7vw;
+}
+
+.landing-page-nav-bar-responsive{
+    display: none;
+}
+.carousel-image{
+    height: 100vh;
+}
+.section-2-images-padding{
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .header-landing-page {
+        height: 6vh;
+        justify-content: normal;
+    }
+    .Registration-Header-Right-Side {
+        display: none;
+    }
+    .hero-sec-heading{
+        font-size: 32px;
+    }
+    .hero-sec-text{
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .Registration-Header-left-Side {
+        padding-left: 0%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .landing-page-nav-bar{
+        display: none;
+    }
+    .landing-page-nav-bar-responsive{
+        display: flex;
+    }
+    .landing-page-nav-bar-responsive img{
+        height: 10vh;
+    }
+    .hero-overlay{
+        width: 100vw;
+        height: 80vh;
+    }
+    .carousel-image{
+        height: 80vh;
+    }
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+    }
+
+    /* Hamburger Icon */
+    .hamburger {
+        margin-left: 46vw;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 10;
+        background-color: #fff;
+        padding: 13px 17px;
+        border-radius: 3px;
+    }
+
+    .hamburger span {
+        transition: 0.3s;
+    }
+    .close-navbar{
+        height: 2.5vh;
+        width: 4vw;
+        background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\bars-solid.svg');
+    }
+    .open-navbar{
+        height: 2.5vh;
+        width: 4vw;
+        background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\xmark-solid.svg');
+    }
+
+    /* Navigation Menu */
+    .menu {
+        position: absolute;
+        top: 183px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        height: 21.7rem;
+    }
+    ul{
+        padding-left: 0rem;
+    }
+    .landing-page-nav-bar-link{
+        height: 10vh;
+    }
+    /* Show menu when active */
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul {
+        list-style: none;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .overlay-2{
+        display: block;
+        top: 70vh;
+    }
+    .overlay-2-sec {
+        height: 50vh;
+        width: 85vw;
+    }
+    .overlay-2-sec-margin{
+        margin: 5vh 0;
+    }
+    .Section-2 {
+        margin-top: 155vh;
+    }
+    .section-2-bg{
+        background-color: #f8f8f8;
+        padding-bottom: 2vh;
+    }
+    .section-2-images{
+        display: block;
+    }
+    .Section-2-image-overlay{
+        display: none;
+    }
+    .section-2-images-padding{
+        margin-top: 8vh;
+    }
+    .Section-3{
+        display: block;
+        padding-right: 3vw;
+    }
+    .Section-3-text{
+        margin: 0;
+    }
+    .Count-Down{
+        height: 14vh;
+        width: 30vw;
+        margin: 0 6vw;
+        border: 2px solid #EC1C27;
+    }
+    .Count-Down-boxes{
+        display: block;
+    }
+    .Count-Down-boxes-responsive{
+        display: flex;
+        margin-bottom: 3vh;
+    }
+    .Section-3-button {
+        margin-left: 6vw;
+    }
+    .Section-3 {
+        height: 1345px;
+        padding-top: 10vh;
+    }
+    .Section-3-img img {
+        height: 50vh;
+        width: 76vw;
+        border-radius: 16px;
+        margin-left: 9vw;
+    }
+    .Section-3-img{
+        margin: 5vh 0;
+    }
+    .Section-4-p {
+        width: 93vw;
+        padding-left: 2vw;
+        margin-left: 2vw;
+    }
+    .Section-4-text-padding {
+        padding-left: 0vw;
+        width: 86vw;
+        margin-left: auto;
+    }
+    .Section-4-text {
+        position: absolute;
+        top: 6vh;
+    }
+    .Section-4 {
+        background-attachment: initial;
+        position: relative;
+        height: 390px;
+    }
+    .Section-5{
+        display: block;
+    }
+    .Section-5-left{
+        width: 100%;
+        padding-bottom: 5vh;
+    }
+    .Section-5-right{
+        width: 100%;
+        padding-top: 7vh;
+    }
+    .Section-5-Input-Name {
+        width: 74vw;
+        padding-left: 1rem;
+    }
+    .Section-5-form {
+        padding: 13vh 5vh 13vh 3vh;
+    }
+    .Section-5-right{
+        padding-bottom: 1vh;
+    }
+    .Section-6-bg{
+        padding-left: 0;
+    }
+    .Section-6-bg-img {
+        width: 100vw;
+    }
+    .Section-6-wrap{
+        position: relative;
+    }
+    .Section-6{
+        top: calc(-38vh - 100px); /* A different adjustment for mobile */
+        /* top: -400px; */
+        display: block;
+    }
+    .section-6-img {
+        width: 17vw;
+        height: 8vh;
+        margin-left: 31vw;
+        margin-bottom: 4vh;
+    }
+    .Section-6 img {
+        height: 4vh;
+    }
+    .Section-6-text {
+        width: 72vw;
+        text-align: center;
+    }
+    .Section-6-input {
+        width: 80vw;
+        margin-top: 0vh;
+    }
+    .Section-6-button {
+        width: 80vw;
+    }
+    .footer-sec-1 {
+        display: block;
+        height: 175vh;
+    }
+    .footer-sec-1-col-1 {
+        width: 80vw;
+    }
+    .footer-sec-1-col-1 p{
+        line-height: 30px;
+    }
+    .footer-sec-1-same-css h3{
+        margin-bottom: 2vh;
+    }
+    .footer-sec-1-col-3 {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .footer-sec-1-col-4{
+        width: 80vw;
+    }
+    .footer-sec-2-text{
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .footer-sec-2{
+        height: 225vh;
+    }
+    .footer-sec-3 {
+        display: block;
+    }
+    .footer-sec-3-left{
+        margin-left: 0vw;
+        text-align: center;
+    }
+    .footer-sec-3-right{
+        margin-top: 3vh;
+        margin-right: 0vw;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    
 }
