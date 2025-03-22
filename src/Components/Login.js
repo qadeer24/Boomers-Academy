@@ -21,20 +21,25 @@ const Login = () => {
     // Check if all inputs are filled
     const isFormValid = formData.input3.trim() !== "" && formData.input4.trim() !== "";
 
+    const [LoginisActive, setLoginIsActive] = useState(false);
+
+    const LoginClick = () => {
+        setLoginIsActive(!LoginisActive);
+    };
 
 
     return (
         <>
             {/* Header */}
-            <div className="header">
+            {/* <div className="header">
 
-                {/* Header-Right-Side */}
+                Header-Right-Side
                 <div className='Registration-Header-Right-Side'>
                     <div className='Registration-Header-Right-Side-img'></div>
                     <div> 1-800-815-1943(TTY:711)</div>
                 </div>
 
-                {/* Header-Right-Side */}
+                Header-Right-Side
                 <div className='Registration-Header-left-Side'>
                     <div className='Registration-Header-left-Side-col1 d-flex mx-4'>
                         <Link to={'/signup'} className="d-flex" style={{color: "white", textDecoration: "none"}}>
@@ -50,14 +55,14 @@ const Login = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
 
             {/* main form */}
             <div className="d-flex form-hero-section">
 
                 {/* main form right side */}
-                <div className='Register-Form py-3'>
+                <div className='Register-Form py-3' style={{backgroundColor: "white"}}>
 
                     {/* Sign-up heading*/}
                     <div>
@@ -88,7 +93,7 @@ const Login = () => {
 
                 {/* main form left side */}
                 <div className="register-Form-logo-area">
-
+                    <img  onClick={LoginClick} src="Icons\xmark-solid.svg" className="login-close" alt="" />
                     {/* Logo */}
                     <div className='register-Form-logo'>
                         <img className='logo-img' src="\Images\logo.svg" alt="" />

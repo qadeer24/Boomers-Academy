@@ -57,15 +57,43 @@
 }
 
 .form-hero-section {
-    margin-top: 4.5vh;
-    margin-left: 15vw;
+    /* margin-top: 4.5vh;
+    margin-left: 15vw; */
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    left: 14rem;
 }
-
+.Login-Wrap-before{
+    display: none;
+}
+.login-bg{
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 98.9vw;
+    background-color: black;
+}
+.Login-wrap-after{
+    display: flex;   
+}
+.login-close{
+    width: 1.5vw;
+    margin-left: 25.5rem;
+    margin-bottom: 7vh;
+    cursor: pointer;
+}
+.Signup-close{
+    width: 1.5vw;
+    cursor: pointer;
+    margin-left: 9rem;
+}
 .register-Form-logo-area {
     width: 33vw;
     height: 85vh;
     background-color: #EC1C27;
-    padding-top: 11vh;
+    padding-top: 2vh;
 }
 
 .register-Form-logo {
@@ -192,14 +220,19 @@
     justify-content: space-evenly;
     color: #fff;
     font-weight: 500;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    box-shadow: 0 0.3px 0 white;
     padding-top: 0.5vh;
 }
-
+.landing-page-text{
+    margin-top: 3rem;
+}
 .landing-page-nav-bar {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .landing-page-nav-bar img {
@@ -211,7 +244,9 @@
     text-decoration: none;
     color: #fff;
 }
-
+.landing-page-nav-bar-Links{
+    margin-right: 1.5rem;
+}
 .landing-page-nav-bar-link:hover {
     color: #F9CC3E;
 }
@@ -828,6 +863,22 @@
     padding: 0;
 }
 
+/* Welcome Page */
+.header-Welcome-page{
+    background-color: #100E17;
+    height: 8vh;
+    width: 98.8vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 0.3px 0 white;
+    padding-top: 0.5vh;
+}
+.header-Welcome-page-right img{
+    height: 6vh;
+}
+
 @media (max-width: 768px) {
     .header-landing-page {
         height: 6vh;
@@ -1116,5 +1167,63 @@
 
 
 @media (min-width: 1600px) {
-    
+    .header-landing-page{
+        height: 6vh;
+    }
+    .Registration-Header-Right-Side-img{
+        height: 15px;
+        width: 15px;
+        margin-top: 5px;
+    }
+    .Registration-Header-left-Side {
+        padding-left: 18vw;
+        margin-top: 13px;
+    }
+    .Registration-Header-Right-Side {
+        margin-top: 13px;
+    }
+    .landing-page-nav-bar{
+        margin-top: 0px;
+    }
+    .landing-page-nav-bar img {
+        margin-left: 12.5vw;
+        width: 6vw;
+    }
+    .landing-page-text{
+        margin-top: 9rem;
+    }
+    .landing-page-nav-bar-Links{
+        margin-right: 14vw;
+    }
+    .Registration-Header-left-Side-col1-img {
+        margin-right: 4px;
+    }
+    .Registration-Header-left-Side-col2-img {
+        margin-right: 4px;
+    }
+    .Registration-Header-left-Side {
+        padding-left: 18vw;
+    }
+    .overlay-2{
+        top: 80vh;
+        left: 10vw;
+    }
+    .overlay-2-sec {
+        height: 40vh;
+        width: 19vw;
+        padding-top: 5vh;
+    }
+    .overlay-2-sec img {
+        height: 5vh;
+        width: 10vw;
+    }
+    .Section-2 {
+        margin-top: 28vh;
+    }
+    .section-2-heading {
+        margin-left: 39vw;
+    }
+    .landing-page-line{
+        width: 8vw;
+    }
 }

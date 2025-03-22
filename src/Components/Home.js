@@ -2,9 +2,11 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Countdown from './Countdown';
+import { Eye, EyeOff } from "lucide-react";
+
 
 const Home = () => {
-
+    const [showPassword, setShowPassword] = useState(false);
     const images = [
         "https://boomersacademy.com/wp-content/uploads/2023/11/slide-1-1-1.webp",
         "https://boomersacademy.com/wp-content/uploads/2023/11/slide-2-1.webp",
@@ -51,9 +53,43 @@ const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const [formData, setFormData] = useState({
+        input3: "",
+        input4: "",
+    });
+
+    // Handle input changes
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+
+    const [LoginisActive, setLoginIsActive] = useState(false);
+
+    const LoginClick = () => {
+        setLoginIsActive(!LoginisActive);
+    };
+
+    const [SignUpisActive, setSignUpIsActive] = useState(false);
+
+    const SignUpClick = () => {
+        setSignUpIsActive(!SignUpisActive);
+    };
+
+
+    // Check if all inputs are filled
+    const isFormValid = formData.input3.trim() !== "" && formData.input4.trim() !== "";
+
+
+    const handleRedirect = () => {
+        window.location.href = "https://nipr.com";
+    };
     return (
         <>
-            {/* Hero Section */}
 
             {/* Carousel */}
             <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
@@ -79,24 +115,24 @@ const Home = () => {
 
                     {/* Header-Right-Side */}
                     <div className='Registration-Header-left-Side'>
-                        <Link to={'/signup'} className='Registration-Header-left-Side-col1 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
+                        <div onClick={SignUpClick} className='Registration-Header-left-Side-col1 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
                             <div className='Registration-Header-left-Side-col1-img'></div>
                             <div style={{ cursor: "pointer" }}>Registration</div>
-                        </Link>
-                        <Link to={'/login'} className='Registration-Header-left-Side-col2 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
+                        </div>
+                        <div onClick={LoginClick} className='Registration-Header-left-Side-col2 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
                             <div className='Registration-Header-left-Side-col2-img'></div>
-                            <div style={{ cursor: "pointer" }}>Login</div>
-                        </Link>
+                            <div style={{ cursor: "pointer" }}>Sign in</div>
+                        </div>
                     </div>
 
                 </div>
 
                 {/* Nav-Bar */}
-                <div className="landing-page-nav-bar mx-5 px-5 my-4">
+                <div className="landing-page-nav-bar mx-5 px-5">
                     <div className='mx-3'>
                         <img src="Images\logo.svg" alt="" />
                     </div>
-                    <div className='d-flex my-5 me-4'>
+                    <div className='d-flex landing-page-nav-bar-Links my-5'>
                         <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>ABOUT</Link>
                         <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>MEDICARE PLAN</Link>
                         <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>GET CONTRACTED</Link>
@@ -129,7 +165,7 @@ const Home = () => {
                     </nav>
                 </div>
                 {/* hero-section-text */}
-                <div className='mt-5 pt-4'>
+                <div className='landing-page-text pt-4'>
                     <p className='text-center'><h2 className='hero-sec-heading'>Welcome to Boomers Medicare Academy</h2></p>
                     <p className='text-center'><h2 className='hero-sec-heading'></h2></p>
                     <p className="text-center"><h2 className='hero-sec-text'>How to Become a Medicare Agent</h2></p>
@@ -167,7 +203,7 @@ const Home = () => {
                     <img src="Icons\spa-solid.svg" alt="" className='landing-page-sec-1-img-1' />
                     <div className="landing-page-line my-3"></div>
                 </div>
-                <p className='text-center'><h5>Get the latest, best, and most meaningful insurance articles discussing Medicare Insurance.</h5></p>
+                <p className='text-center'><h6 style={{ color: "#464646" }}>Get the latest, best, and most meaningful insurance articles discussing Medicare Insurance.</h6></p>
                 <div className="section-2-images">
                     <Link to={'redeterminations-are-back'} className='section-2-images-sec'>
                         <img src="Images\section-2-image-1.jpg" alt="" />
@@ -370,6 +406,158 @@ const Home = () => {
                 <div className="footer-sec-3 py-4">
                     <div className='footer-sec-3-left'>Copyright © 2023 Boomers Medicare Academy</div>
                     <div className='footer-sec-3-right'>Design by: Stream Design Studio</div>
+                </div>
+            </div>
+
+            {/* Login */}
+            <div className={LoginisActive ? "login-bg" : "login-bg-before"}>
+            </div>
+            <div className={LoginisActive ? "Login-wrap-after" : "Login-Wrap-before"}>
+                <div className="d-flex form-hero-section">
+
+                    {/* main form right side */}
+                    <div className='Register-Form py-3' style={{ backgroundColor: "white" }}>
+
+                        {/* Sign-up heading*/}
+                        <div>
+                            <h3 className='text-center pt-1' style={{ color: "black", fontWeight: "700" }}>Sign in</h3>
+                        </div>
+
+                        <div className="login-inputs">
+                            {/* Email */}
+                            <div class="input-group registration-input mb-2">
+                                <span>Email :</span>
+                                <input type="text" class=" form-input" aria-label="Recipient's username" name="input3" value={formData.input3} onChange={handleChange} aria-describedby="basic-addon2" />
+                            </div>
+
+                            {/* Password */}
+                            <div class="input-group registration-input mb-2">
+                                <span>Password :</span>
+                                <div className="relative">
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        className="form-input pr-10"
+                                        aria-label="Recipient's username"
+                                        name="input4"
+                                        value={formData.input4}
+                                        onChange={handleChange}
+                                        aria-describedby="basic-addon2"
+                                    />
+                                </div>
+                            </div>
+
+
+                            {/* Submit Button */}
+                            <button type="button" className={isFormValid ? "btn  form-submit-button mt-3" : "btn  form-submit-button-before mt-3"} style={{ cursor: isFormValid ? "pointer" : "not-allowed" }}>Sign in</button>
+
+                        </div>
+
+                    </div>
+
+
+                    {/* main form left side */}
+                    <div className="register-Form-logo-area">
+                        <img onClick={LoginClick} src="Icons\xmark-solid(2).svg" className="login-close" alt="" />
+                        {/* Logo */}
+                        <div className='register-Form-logo'>
+                            <img className='logo-img' src="\Images\logo.svg" alt="" />
+                            <h3 className='logo-text'>Welcome to The Boomers Academy for Insurance Agents</h3>
+                        </div>
+
+                        {/* Sign-up button */}
+                        <button type="button" class="btn btn-light register-Form-logo-button">Sign in</button>
+
+                        {/* Go to login Page */}
+                        <div className="move-to-login-page my-3">Don't have an account? <a onClick={() => { LoginClick(); SignUpClick(); }} style={{ color: "white", textDecoration: "underline", cursor: "pointer" }}> Sign Up </a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* SignUp */}
+            <div className={SignUpisActive ? "login-bg" : "login-bg-before"}>
+            </div>
+            <div className={SignUpisActive ? "Login-wrap-after" : "Login-Wrap-before"}>
+                <div className="d-flex form-hero-section">
+
+                    {/* main form left side */}
+                    <div className="register-Form-logo-area py-5">
+
+                        {/* Logo */}
+                        <div className='register-Form-logo'>
+                            <img className='logo-img' src="\Images\logo.svg" alt="" />
+                            <h3 className='logo-text'>Welcome to The Boomers Academy for Insurance Agents</h3>
+                        </div>
+
+                        {/* Sign-up button */}
+                        <button type="button" class="btn btn-light register-Form-logo-button">Sign Up</button>
+
+                        {/* Go to login Page */}
+                        <div className="move-to-login-page my-3">Already have an account? <a onClick={() => { LoginClick(); SignUpClick(); }} style={{ color: "white", textDecoration: "underline", cursor: "pointer" }}> Sign in </a></div>
+                    </div>
+
+                    {/* main form right side */}
+                    <div className='Register-Form py-3' style={{ backgroundColor: "white" }}>
+
+                        {/* Sign-up heading*/}
+                        <div>
+                            <h3 className='text-center pt-1' style={{ color: "black", fontWeight: "700" }}>Create Account<img src="Icons\xmark-solid(3).svg" alt="" className='Signup-close' onClick={SignUpClick} /></h3>
+
+                        </div>
+
+                        {/* First Name */}
+                        <div class="input-group registration-input mb-2">
+                            <span>First Name :</span>
+                            <input type="text" class=" form-input" aria-label="Recipient's username" name="input1" value={formData.input1} onChange={handleChange} aria-describedby="basic-addon2" />
+                        </div>
+
+                        {/* Last Name */}
+                        <div class="input-group registration-input mb-2">
+                            <span>Last Name :</span>
+                            <input type="text" class=" form-input" aria-label="Recipient's username" name="input2" value={formData.input2} onChange={handleChange} aria-describedby="basic-addon2" />
+                        </div>
+
+                        {/* Email */}
+                        <div class="input-group registration-input mb-2">
+                            <span>Email :</span>
+                            <input type="text" class=" form-input" aria-label="Recipient's username" name="input3" value={formData.input3} onChange={handleChange} aria-describedby="basic-addon2" />
+                        </div>
+
+                        {/* Password */}
+                        <div class="input-group registration-input mb-2">
+                            <span>Password :</span>
+                            <div className="relative">
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    className="form-input pr-10"
+                                    aria-label="Recipient's username"
+                                    name="input4"
+                                    value={formData.input4}
+                                    onChange={handleChange}
+                                    aria-describedby="basic-addon2"
+                                />
+                            </div>
+                        </div>
+
+                        {/* National Producer Number */}
+                        <div class="input-group registration-input mb-2">
+                            <span>(NPN) National Producer Number:</span>
+                            <input type="text" class=" form-input" aria-label="Recipient's username" name="isChecked" checked={formData.isChecked} onChange={handleChange} aria-describedby="basic-addon2" />
+                        </div>
+
+                        {/* Website link and check box */}
+                        <div className=' checkbox-div mt-3' style={{ color: "black" }}>Look up at <Link onClick={handleRedirect} style={{ color: "black" }}> NIPR.com</Link>  </div>
+                        <div className='d-flex checkbox-div mt-3 mb-1'>
+                            <input class="form-check-input checkbox-border" type="checkbox" value="" name="isChecked" checked={formData.isChecked} onChange={handleChange} id="flexCheckDefault" />
+                            <label class="form-check-label checkbox-text px-2" for="flexCheckDefault">
+                                By registering, you agree to Boomers Academy's Terms of Service and Privacy Policy. You consent to receiving updates and communications from us.
+                            </label>
+                        </div>
+
+                        {/* Submit Button */}
+                        <button type="button" className={isFormValid ? "btn  form-submit-button mt-3" : "btn  form-submit-button-before mt-3"} style={{ cursor: isFormValid ? "pointer" : "not-allowed" }}>Sign Up</button>
+
+                    </div>
                 </div>
             </div>
         </>
