@@ -1,112 +1,93 @@
 import React, { useState } from "react";
 import './style.css'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
-    const [formData, setFormData] = useState({
-        input3: "",
-        input4: "",
-    });
-
-    // Handle input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
-        }));
+    const [darkMode, setDarkMode] = useState(false);
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
     };
-
-    // Check if all inputs are filled
-    const isFormValid = formData.input3.trim() !== "" && formData.input4.trim() !== "";
-
-    const [LoginisActive, setLoginIsActive] = useState(false);
-
-    const LoginClick = () => {
-        setLoginIsActive(!LoginisActive);
-    };
-
 
     return (
         <>
-            {/* Header */}
-            {/* <div className="header">
+            <div style={{ backgroundColor: "black" }}>
 
-                Header-Right-Side
-                <div className='Registration-Header-Right-Side'>
-                    <div className='Registration-Header-Right-Side-img'></div>
-                    <div> 1-800-815-1943(TTY:711)</div>
-                </div>
-
-                Header-Right-Side
-                <div className='Registration-Header-left-Side'>
-                    <div className='Registration-Header-left-Side-col1 d-flex mx-4'>
-                        <Link to={'/signup'} className="d-flex" style={{color: "white", textDecoration: "none"}}>
-                            <div className='Registration-Header-left-Side-col1-img'></div>
-                            <div style={{ cursor: "pointer" }}>Registration</div>
-                        </Link>
+                {/* Nav-Bar */}
+                <div className="landing-page-nav-bar mx-5 px-5">
+                    <div className='mx-3'>
+                        <img src="Images\logo.svg" alt="" />
                     </div>
-                    <div className='Registration-Header-left-Side-col2 d-flex mx-4'>
-                        <Link to={'/login'} className="d-flex" style={{color: "white", textDecoration: "none"}}>
-                            <div className='Registration-Header-left-Side-col2-img'></div>
-                            <div style={{ cursor: "pointer" }}>Login</div>
-                        </Link>
+                    <div className='d-flex landing-page-nav-bar-Links my-5'>
+                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>ABOUT</Link>
+                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>MEDICARE PLAN</Link>
+                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>GET CONTRACTED</Link>
+                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>MARKETING</Link>
+                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>TRAINING</Link>
+                        <Link to={'/'} className='ms-2 landing-page-nav-bar-link'>TECHNOLOGY</Link>
                     </div>
-                </div>
-
-            </div> */}
-
-
-            {/* main form */}
-            <div className="d-flex form-hero-section">
-
-                {/* main form right side */}
-                <div className='Register-Form py-3' style={{backgroundColor: "white"}}>
-
-                    {/* Sign-up heading*/}
-                    <div>
-                        <h3 className='text-center pt-1' style={{ color: "black", fontWeight: "700" }}>Sign in</h3>
-                    </div>
-
-                    <div className="login-inputs">
-                        {/* Email */}
-                        <div class="input-group registration-input mb-2">
-                            <span>Email :</span>
-                            <input type="text" class=" form-input" aria-label="Recipient's username" name="input3" value={formData.input3} onChange={handleChange} aria-describedby="basic-addon2" />
+                    <div className="profile my-4">
+                        {/* Image */}
+                        <div className="profile-img  "></div>
+                        {/* Hover */}
+                        <div className="profile-hover">
+                            {/* Hover-Name */}
+                            <div className="d-flex ms-4">
+                                <div className="profile-img-2  "></div>
+                                <div className="mx-3">
+                                    <span className="profile-span">John Doe</span>
+                                    <p className="profile-text">carla51@rush.net</p>
+                                </div>
+                            </div>
+                            {/* Progress-bar */}
+                            <div>
+                                <div className="d-flex progress-bar-wrap ms-4 mb-1">
+                                    <div className="profile-text font-13">Profile Progress</div>
+                                    <div className="profile-text font-13">50%</div>
+                                </div>
+                                <div className="progress-bar ms-4"><div className="progress-bar-fill"></div></div>
+                                <div className="profile-option-border">
+                                    <div className="profile-option font-13">
+                                        <div className="default-profile-logo ms-4"></div>
+                                        Profile
+                                    </div>
+                                </div>
+                                <div className="Websites-options px-4">
+                                    <p className="mt-3">Websites</p>
+                                    <div className="website-1 d-flex">
+                                        <div className="website-1-logo"></div>
+                                        <div className="pt-1">Boomers Medicare Academy</div>
+                                    </div>
+                                    <div className="website-2 d-flex">
+                                        <div className="website-2-logo"></div>
+                                        <div className="pt-1">Boomers Insurance Services</div>
+                                    </div>
+                                </div>
+                                <div className="Agencies-options px-4">
+                                    <p className="mt-2">Agencies</p>
+                                    <div className="Agencies-1 d-flex">
+                                        <div className="website-2-logo"></div>
+                                        <div className="pt-1">Boomers Insurance Services</div>
+                                    </div>
+                                </div>
+                                <div className="dark-mode-toggle-btn mx-3 my-3">
+                                    <div className="py-2 px-1 d-flex">
+                                        <div className="dark-mode-toggle-btn-img"></div>
+                                        <div className="dark-mode-text mt-1">Dark Mode</div>
+                                        <label className="switch">
+                                            <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
+                                            <span className="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button className="log-out-button mx-4">Logout</button>
+                            </div>
                         </div>
-
-                        {/* Password */}
-                        <div class="input-group registration-input mb-2">
-                            <span>Password :</span>
-                            <input type="text" class=" form-input" aria-label="Recipient's username" name="input4" value={formData.input4} onChange={handleChange} aria-describedby="basic-addon2" />
-                        </div>
-
-
-                        {/* Submit Button */}
-                        <button type="button" className={isFormValid ? "btn  form-submit-button mt-3" : "btn  form-submit-button-before mt-3"} style={{ cursor: isFormValid ? "pointer" : "not-allowed" }}>Sign in</button>
-
                     </div>
 
-                </div>
-
-
-                {/* main form left side */}
-                <div className="register-Form-logo-area">
-                    <img  onClick={LoginClick} src="Icons\xmark-solid.svg" className="login-close" alt="" />
-                    {/* Logo */}
-                    <div className='register-Form-logo'>
-                        <img className='logo-img' src="\Images\logo.svg" alt="" />
-                        <h3 className='logo-text'>Welcome to The Boomers Academy for Insurance Agents</h3>
-                    </div>
-
-                    {/* Sign-up button */}
-                    <button type="button" class="btn btn-light register-Form-logo-button">Sign in</button>
-
-                    {/* Go to login Page */}
-                    <div className="move-to-login-page my-3">Don't have an account? <Link to={'/signup'} style={{ color: "white" }}> Sign Up </Link></div>
                 </div>
             </div>
+
         </>
     )
 }

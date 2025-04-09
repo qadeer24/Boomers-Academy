@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Countdown from './Countdown';
-import { Eye, EyeOff } from "lucide-react";
 
 
 const Home = () => {
@@ -115,10 +114,6 @@ const Home = () => {
 
                     {/* Header-Right-Side */}
                     <div className='Registration-Header-left-Side'>
-                        <div onClick={SignUpClick} className='Registration-Header-left-Side-col1 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
-                            <div className='Registration-Header-left-Side-col1-img'></div>
-                            <div style={{ cursor: "pointer" }}>Registration</div>
-                        </div>
                         <div onClick={LoginClick} className='Registration-Header-left-Side-col2 d-flex mx-4' style={{ textDecoration: "none", color: "white" }}>
                             <div className='Registration-Header-left-Side-col2-img'></div>
                             <div style={{ cursor: "pointer" }}>Sign in</div>
@@ -206,7 +201,9 @@ const Home = () => {
                 <p className='text-center'><h6 style={{ color: "#464646" }}>Get the latest, best, and most meaningful insurance articles discussing Medicare Insurance.</h6></p>
                 <div className="section-2-images">
                     <Link to={'redeterminations-are-back'} className='section-2-images-sec'>
-                        <img src="Images\section-2-image-1.jpg" alt="" />
+                        <div className="sec-2-img">
+                            <img src="Images\section-2-image-1.jpg" alt="" />
+                        </div>
                         {/* Image Shading */}
                         <div className='Section-2-image-overlay'>
                             <div class="section-2-overlay-1-1"></div>
@@ -223,7 +220,9 @@ const Home = () => {
                         </div>
                     </Link>
                     <Link to={'2023-new-cms-marketing-rules'} className='section-2-images-sec '>
-                        <img src="Images\section-2-image-2.jpg" className='section-2-images-padding' alt="" />
+                        <div className="sec-2-img">
+                            <img src="Images\section-2-image-2.jpg" className='section-2-images-padding' alt="" />
+                        </div>
                         {/* Image Shading */}
                         <div className='Section-2-image-overlay'>
                             <div class="section-2-overlay-2-1"></div>
@@ -240,7 +239,9 @@ const Home = () => {
                         </div>
                     </Link>
                     <Link to={'cms-updates-medicare-marketing-guidelines-5-10-23'} className='section-2-images-sec'>
-                        <img src="Images\section-2-image-3.jpg" className='section-2-images-padding' alt="" />
+                        <div className="sec-2-img">
+                            <img src="Images\section-2-image-3.jpg" className='section-2-images-padding' alt="" />
+                        </div>
                         {/* Image Shading */}
                         <div className='Section-2-image-overlay'>
                             <div class="section-2-overlay-3-1"></div>
