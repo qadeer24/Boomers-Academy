@@ -128,11 +128,11 @@ const Home = () => {
                         <img src="Images\logo.svg" alt="" />
                     </div>
                     <div className='d-flex landing-page-nav-bar-Links my-5'>
-                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>ABOUT</Link>
-                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>MEDICARE PLAN</Link>
-                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>GET CONTRACTED</Link>
-                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>MARKETING</Link>
-                        <Link to={'/'} className='mx-2 landing-page-nav-bar-link'>TRAINING</Link>
+                        <Link to={'/about'} className='mx-2 landing-page-nav-bar-link'>ABOUT</Link>
+                        <Link to={'/medicare-plan'} className='mx-2 landing-page-nav-bar-link'>MEDICARE PLAN</Link>
+                        <Link to={'/get-contracted'} className='mx-2 landing-page-nav-bar-link'>GET CONTRACTED</Link>
+                        <Link to={'/marketing'} className='mx-2 landing-page-nav-bar-link'>MARKETING</Link>
+                        <Link to={'/training'} className='mx-2 landing-page-nav-bar-link'>TRAINING</Link>
                         <Link to={'/'} className='ms-2 landing-page-nav-bar-link'>TECHNOLOGY</Link>
                     </div>
                 </div>

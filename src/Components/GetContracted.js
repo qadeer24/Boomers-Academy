@@ -2,8 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
-const Marketing = () => {
+const GetContracted = () => {
 
     const socialsecurityLink = () => {
         window.location.href = "https://www.ssa.gov/medicare/part-d-extra-help";
@@ -39,8 +38,7 @@ const Marketing = () => {
         setLoginIsActive(!LoginisActive);
     };
 
-    const [isOpen, setIsOpen] = useState(false);
-
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <>
@@ -71,13 +69,12 @@ const Marketing = () => {
                 <div className='d-flex landing-page-nav-bar-Links my-5'>
                     <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link'>MEDICARE PLAN</Link>
-                    <Link to={'/get-contracted'} className='mx-2 marketing-page-nav-bar-link'>GET CONTRACTED</Link>
-                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>MARKETING</Link>
+                    <Link to={'/get-contracted'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>GET CONTRACTED</Link>
+                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link'>MARKETING</Link>
                     <Link to={'/training'} className='mx-2 marketing-page-nav-bar-link'>TRAINING</Link>
                     <Link to={'/'} className='ms-2 marketing-page-nav-bar-link'>TECHNOLOGY</Link>
                 </div>
             </div>
-
             {/* Nav-bar for Mobile */}
             <div className="landing-page-nav-bar-responsive my-4">
                 <div className='mx-4'>
@@ -101,55 +98,10 @@ const Marketing = () => {
                 </nav>
             </div>
 
-
-            {/* Marketing Products Row 1 */}
-            <div className="products-row products-row-1">
-                <div className="product">
-                    <img src="Images\product-1.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Custom Canopy, Table Cover and Pull-up Banner package</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-2.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Tote Bag</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-3.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Pen for events</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-4.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Business Cards qty 1000</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-            </div>
-            {/* Marketing Products Row 2 */}
-            <div className="products-row products-row-2">
-                <div className="product">
-                    <img src="Images\product-5.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">2024 Hola Boomer Book</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-6.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">2024 Hello Boomer Book</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-            </div>
-
-
-            {/* Section-6 (Mail Submition)*/}
+            {/* Section-6 (Medicare)*/}
             <div className="Section-6-bg pt-3"><div className='Section-6-bg-img'></div></div>
             <div className="Section-6-wrap">
-                <div className="mail-submit-marketing py-5">
+                <div className="mail-submit-get-contracted">
                     <div className='section-6-img mt-2'><img src="Icons\envelope-open-text-solid.svg" alt="" /></div>
                     <div className="Section-6-text ms-4 me-2">
                         <h5>Subsribe To Our Newsletter</h5>
@@ -209,8 +161,30 @@ const Marketing = () => {
                 </div>
             </div>
 
+
+            <div className="app">
+
+                {isOpen && (
+                    <>
+                        <div className="overlay" onClick={() => setIsOpen(false)} />
+                        <div className="popup">
+                            <div className="popup-scroll">
+
+                                <h3>Online Contracting System</h3>
+                                <p className='py-4'>Welcome to Boomers insurance Online Contracting System, powered by SuranceBay. We are pleased to provide agents an opportunity to contract with multiple Medicare carriers with one-click and at their convenience.</p>
+                                <p>The online contracting process is simple and easy! To prepare for your contracting process, you will need to have a copy of your E&O insurance (PDF format recommended), a copy of a voided check (PDF format recommended), and your state license number(s).</p>
+                                <p className='py-3'>Click below to access SuranceBay.</p>
+                                <p>Please remember to save the username and password for Surancebay and all your carriers portal websites. If you are unsure of your credentials to access your contracting portal, please visit the login page and click on ‘Password Recovery.’ If you have never created an account with SuranceBay & Boomers Insurance , you will need to click on ‘New User.’</p>
+                                <p className='pt-3'>If you experience any issues during the contracting process and have questions about how to proceed, please contact our dedicated Contracting</p>
+                                <p className='pb-3'>Liaisons at 1-800-815-1943.</p>
+                                <button className='get-contracted-button'>Start Contracting</button>
+                            </div>
+                        </div>
+                    </>
+                )}
+            </div>
         </>
     )
 }
 
-export default Marketing
+export default GetContracted

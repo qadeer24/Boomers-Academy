@@ -6,6 +6,9 @@ import Home from './Components/Home';
 import WelcomePage from './Components/Welcome'
 import Marketing from './Components/Marketing';
 import Medicare from './Components/Medicare';
+import Training from './Components/Training';
+import About from './Components/About';
+import GetContracted from './Components/GetContracted';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/welcome-page" element={<WelcomePage />} />  
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/medicare-plan" element={<Medicare />} />
+        <Route path="/training" element={<Training />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/get-contracted" element={<GetContracted />} />
       </Routes>
     </Router>
   );

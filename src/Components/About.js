@@ -2,8 +2,8 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+const About = () => {
 
-const Marketing = () => {
 
     const socialsecurityLink = () => {
         window.location.href = "https://www.ssa.gov/medicare/part-d-extra-help";
@@ -41,7 +41,6 @@ const Marketing = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-
     return (
         <>
             {/* Header */}
@@ -69,15 +68,14 @@ const Marketing = () => {
                     <img src="Images\logo.svg" alt="" />
                 </div>
                 <div className='d-flex landing-page-nav-bar-Links my-5'>
-                    <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
+                    <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link'>MEDICARE PLAN</Link>
                     <Link to={'/get-contracted'} className='mx-2 marketing-page-nav-bar-link'>GET CONTRACTED</Link>
-                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>MARKETING</Link>
+                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link'>MARKETING</Link>
                     <Link to={'/training'} className='mx-2 marketing-page-nav-bar-link'>TRAINING</Link>
                     <Link to={'/'} className='ms-2 marketing-page-nav-bar-link'>TECHNOLOGY</Link>
                 </div>
             </div>
-
             {/* Nav-bar for Mobile */}
             <div className="landing-page-nav-bar-responsive my-4">
                 <div className='mx-4'>
@@ -101,55 +99,25 @@ const Marketing = () => {
                 </nav>
             </div>
 
-
-            {/* Marketing Products Row 1 */}
-            <div className="products-row products-row-1">
-                <div className="product">
-                    <img src="Images\product-1.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Custom Canopy, Table Cover and Pull-up Banner package</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
+            <div className='video-container'>
+                <div className="about-overlay">
+                    <h3>Who We Are</h3>
+                    <h4>Boomers Insurance, a leading Medicare Field Marketing Organization (FMO)</h4>
+                    <div className="about-overlay-line"></div>
+                    <p>Based out of Downey, California, Boomers Insurance specializes in providing training, support, and technology to independent insurance agents, helping them to effectively market and sell Medicare insurance products in 46 states. The company offers a range of Medicare Advantage, Medicare Supplement, and other Medicare-related products from leading insurance carriers</p>
                 </div>
-                <div className="product">
-                    <img src="Images\product-2.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Tote Bag</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-3.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Pen for events</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-4.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">Boomers Business Cards qty 1000</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-            </div>
-            {/* Marketing Products Row 2 */}
-            <div className="products-row products-row-2">
-                <div className="product">
-                    <img src="Images\product-5.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">2024 Hola Boomer Book</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <img src="Images\product-6.webp" className='product-img' alt="" />
-                    <div className="product-name pt-2">2024 Hello Boomer Book</div>
-                    <div className="product-price">$ 0,00</div>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
+                <iframe
+                    src="https://www.youtube.com/embed/v0ZG817c9kY?controls=1&rel=0&playsinline=0&modestbranding=0&cc_load_policy=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fboomersacademy.com&widgetid=1&forigin=https%3A%2F%2Fboomersacademy.com%2Fabout%2F&aoriginsup=1&gporigin=https%3A%2F%2Fboomersacademy.com%2Ftraining%2F&vf=2"
+                    title="YouTube video"
+                    className='about-video'
+                    allowFullScreen
+                ></iframe>
             </div>
 
-
-            {/* Section-6 (Mail Submition)*/}
+            {/* Section-6 (Medicare)*/}
             <div className="Section-6-bg pt-3"><div className='Section-6-bg-img'></div></div>
             <div className="Section-6-wrap">
-                <div className="mail-submit-marketing py-5">
+                <div className="mail-submit-about">
                     <div className='section-6-img mt-2'><img src="Icons\envelope-open-text-solid.svg" alt="" /></div>
                     <div className="Section-6-text ms-4 me-2">
                         <h5>Subsribe To Our Newsletter</h5>
@@ -208,9 +176,8 @@ const Marketing = () => {
                     <div className='footer-sec-3-right'>Design by: Stream Design Studio</div>
                 </div>
             </div>
-
         </>
     )
 }
 
-export default Marketing
+export default About
