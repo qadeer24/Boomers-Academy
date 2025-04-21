@@ -64,9 +64,9 @@ const Medicare = () => {
 
             {/* Nav-Bar */}
             <div className="landing-page-nav-bar mx-5 px-5">
-                <div className='mx-3'>
+                <Link to={'/'} className='mx-3'>
                     <img src="Images\logo.svg" alt="" />
-                </div>
+                </Link>
                 <div className='d-flex landing-page-nav-bar-Links my-5'>
                     <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>MEDICARE PLAN</Link>

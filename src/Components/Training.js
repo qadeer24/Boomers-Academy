@@ -73,9 +73,9 @@ const Training = () => {
 
             {/* Nav-Bar */}
             <div className="landing-page-nav-bar mx-5 px-5">
-                <div className='mx-3'>
+                <Link to={'/'} className='mx-3'>
                     <img src="Images\logo.svg" alt="" />
-                </div>
+                </Link>
                 <div className='d-flex landing-page-nav-bar-Links my-5'>
                     <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link'>MEDICARE PLAN</Link>
@@ -392,7 +392,7 @@ const Training = () => {
                             </div>
 
                             <div className="training-course-info-grid">
-                                <h4 className='training-header'>Humana’s Election Period Playbook</h4>
+                                <h5 className='training-header'>Humana’s Election Period Playbook</h5>
                                 <p>by <span>Daniel Hernandez</span></p>
                                 <p>in <span>New agent training</span></p>
                                 <div className=" training-course-grid-logos">
@@ -421,7 +421,7 @@ const Training = () => {
                             </div>
 
                             <div className="training-course-info-grid">
-                                <h4 className='training-header'>Humana’s Election Period Playbook</h4>
+                                <h5 className='training-header'>Humana Playbook-Learn How You May Generate More Leads</h5>
                                 <p>by <span>Daniel Hernandez</span></p>
                                 <p>in <span>New agent training</span></p>
                                 <div className=" training-course-grid-logos">
@@ -433,7 +433,7 @@ const Training = () => {
                                     {/* Students */}
                                     <div className='d-flex'>
                                         <img src="Icons\user-graduate-solid.svg" alt="" />
-                                        <div className='ms-2'>8 Students  </div>
+                                        <div className='ms-2'>0 Students  </div>
                                     </div>
                                 </div>
                                 <div className="">
@@ -450,7 +450,7 @@ const Training = () => {
                             </div>
 
                             <div className="training-course-info-grid">
-                                <h4 className='training-header'>Humana’s Election Period Playbook</h4>
+                                <h5 className='training-header'>Humana’s Dual Eligible Special Needs Plans (DSNPs) Guide</h5>
                                 <p>by <span>Daniel Hernandez</span></p>
                                 <p>in <span>New agent training</span></p>
                                 <div className=" training-course-grid-logos">
@@ -462,7 +462,7 @@ const Training = () => {
                                     {/* Students */}
                                     <div className='d-flex'>
                                         <img src="Icons\user-graduate-solid.svg" alt="" />
-                                        <div className='ms-2'>8 Students  </div>
+                                        <div className='ms-2'>0 Students  </div>
                                     </div>
                                 </div>
                                 <div className="">
@@ -479,7 +479,7 @@ const Training = () => {
                             </div>
 
                             <div className="training-course-info-grid">
-                                <h4 className='training-header'>Humana’s Election Period Playbook</h4>
+                                <h5 className='training-header'>Social Media. Get Started using Linkedin.</h5>
                                 <p>by <span>Daniel Hernandez</span></p>
                                 <p>in <span>New agent training</span></p>
                                 <div className=" training-course-grid-logos">
@@ -491,7 +491,7 @@ const Training = () => {
                                     {/* Students */}
                                     <div className='d-flex'>
                                         <img src="Icons\user-graduate-solid.svg" alt="" />
-                                        <div className='ms-2'>8 Students  </div>
+                                        <div className='ms-2'>11 Students  </div>
                                     </div>
                                 </div>
                                 <div className="">
@@ -510,7 +510,7 @@ const Training = () => {
                         </div>
 
                         <div className="training-course-info-grid">
-                            <h4 className='training-header'>Humana’s Election Period Playbook</h4>
+                            <h5 className='training-header'>Get started marketing on Facebook</h5>
                             <p>by <span>Daniel Hernandez</span></p>
                             <p>in <span>New agent training</span></p>
                             <div className=" training-course-grid-logos">
@@ -522,7 +522,7 @@ const Training = () => {
                                 {/* Students */}
                                 <div className='d-flex'>
                                     <img src="Icons\user-graduate-solid.svg" alt="" />
-                                    <div className='ms-2'>8 Students  </div>
+                                    <div className='ms-2'>0 Students  </div>
                                 </div>
                             </div>
                             <div className="">

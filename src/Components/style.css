@@ -1197,6 +1197,11 @@ input:checked+.slider:before {
     margin-bottom: 7rem;
 }
 
+.product-row-3{
+    display: flex;
+    margin-top: 1rem;
+}
+
 .mail-submit-marketing {
     display: flex;
     padding-left: 9vw;
@@ -1207,6 +1212,66 @@ input:checked+.slider:before {
 .mail-submit-marketing img {
     height: 6vh;
 }
+/* Marketing Products */
+.marketing-product{
+    display: flex;
+    margin: 5rem 7rem;
+}
+.marketing-product-img img{
+    width: 35rem;
+}
+.marketing-product-text{
+    margin-left: 3rem;
+}
+.marketing-product-text p{
+    font-size: 14.8px;
+    color: #AEAEAE;
+}
+.marketing-product-text h3{
+    margin: 1rem 0; 
+}
+.marketing-product-text h4{
+    font-weight: 600; 
+    font-size: 24px;
+    color: #4C4C4C;
+}
+.marketing-product-uncategorized-link{
+    text-decoration: none;
+    color: #EC1C27;
+    font-weight: 500;
+}
+.marketing-product-text-Link{
+    color: #AEAEAE;
+    text-decoration: none;
+}
+.marketing-product-line{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+.marketing-related-products{
+    margin: 5rem 7rem;
+}
+.marketing-related-products h3{
+    font-weight: 600;
+}
+.marketing-related-product{
+    margin: 0 0.6rem;
+}
+.marketing-related-product img{
+    width: 17rem;
+}
+.mail-submit-marketing-product {
+    display: flex;
+    padding-left: 9vw;
+    position: absolute;
+    top: 228vh;
+}
+.mail-submit-marketing-product img {
+    height: 6vh;
+}
+
+
 
 /* Medicare-plan */
 
@@ -1258,6 +1323,7 @@ input:checked+.slider:before {
 .medicare-table-header {
     display: flex;
     color: #fff;
+    margin-top: 1rem;
 }
 
 .col-1 {
@@ -1265,7 +1331,7 @@ input:checked+.slider:before {
 }
 
 .col-1-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 2rem 1rem;
     font-size: 16px;
     font-weight: 800;
@@ -1286,7 +1352,7 @@ input:checked+.slider:before {
 }
 
 .col-2-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 1rem 2rem;
     font-size: 16px;
     font-weight: 800;
@@ -1306,7 +1372,7 @@ input:checked+.slider:before {
 }
 
 .col-3-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 2rem 1rem;
     font-size: 16px;
     font-weight: 800;
@@ -1327,7 +1393,7 @@ input:checked+.slider:before {
 }
 
 .col-4-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 2rem 1rem;
     font-size: 16px;
     font-weight: 800;
@@ -1347,7 +1413,7 @@ input:checked+.slider:before {
 }
 
 .col-5-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 2.9rem 1rem;
     font-size: 16px;
     font-weight: 800;
@@ -1366,7 +1432,7 @@ input:checked+.slider:before {
 }
 
 .col-6-header {
-    height: 6.5rem;
+    height: 7rem;
     padding: 1rem 2rem;
     font-size: 16px;
     font-weight: 800;
@@ -1734,7 +1800,7 @@ h4 {
 .popup-scroll {
     overflow-y: auto;
     max-height: 100vh;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     z-index: 1;
     position: relative;
 }
@@ -1744,6 +1810,11 @@ h4 {
     color: #fff;
     border: none;
     border-radius: 25px;
+}
+.get-contracted-popup-close img{
+    width: 14px;
+    margin-left: 37.5rem;
+    cursor: pointer;
 }
 @keyframes fadeIn {
     from {

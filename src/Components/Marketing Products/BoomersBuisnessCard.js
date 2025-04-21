@@ -2,8 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
-const Marketing = () => {
+const BoomersBuisnessCard = () => {
 
     const socialsecurityLink = () => {
         window.location.href = "https://www.ssa.gov/medicare/part-d-extra-help";
@@ -41,7 +40,6 @@ const Marketing = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-
     return (
         <>
             {/* Header */}
@@ -72,7 +70,7 @@ const Marketing = () => {
                     <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link'>MEDICARE PLAN</Link>
                     <Link to={'/get-contracted'} className='mx-2 marketing-page-nav-bar-link'>GET CONTRACTED</Link>
-                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link' style={{ color: "#EC1C27" }}>MARKETING</Link>
+                    <Link to={'/marketing'} className='mx-2 marketing-page-nav-bar-link'>MARKETING</Link>
                     <Link to={'/training'} className='mx-2 marketing-page-nav-bar-link'>TRAINING</Link>
                     <Link to={'/'} className='ms-2 marketing-page-nav-bar-link'>TECHNOLOGY</Link>
                 </div>
@@ -102,66 +100,73 @@ const Marketing = () => {
             </div>
 
 
-            {/* Marketing Products Row 1 */}
-            <div className="products-row products-row-1">
-                <div className="product">
-                    <Link to={'/custom-canopy-table-cover-and-pull-up-banner-package'} style={{textDecoration:"none"}}>
-                        <img src="Images\product-1.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">Custom Canopy, Table Cover and Pull-up Banner package</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
+            {/* Product */}
+            <div className="marketing-product">
+                <div className='marketing-product-img'>
+                    <img src="Images\product-4.webp" alt="" />
                 </div>
-                <div className="product">
-                    <Link style={{textDecoration: "none"}} to={'/boomers-tote-bag'}>
-                        <img src="Images\product-2.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">Boomers Tote Bag</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
+
+                <div className='marketing-product-text'>
+                    <p><Link className='marketing-product-text-Link' to={'/'}>Home</Link> / <Link className='marketing-product-text-Link' to={'/'}>Uncategorized</Link> / Boomers Business Cards qty 1000</p>
+                    <Link className='marketing-product-uncategorized-link'>Uncategorized</Link>
+                    <h3>Boomers Business Cards qty 1000</h3>
+                    <h4>$ 0,00</h4>
                     <button className='add-to-cart-button my-2'>Add to cart</button>
+                    <div className="marketing-product-line"></div>
+                    <div className="d-flex my-2">
+                        <span>Category:</span>
+                        <Link className='marketing-product-uncategorized-link ms-1'>Uncategorized</Link>
+                    </div>
                 </div>
-                <div className="product">
-                    <Link style={{textDecoration: "none"}} to={'/boomers-pen-for-events'}>
-                        <img src="Images\product-3.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">Boomers Pen for events</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <Link style={{textDecoration: "none"}} to={'/boomers-business-cards-qty-1000'}>
-                        <img src="Images\product-4.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">Boomers Business Cards qty 1000</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
+
             </div>
-            {/* Marketing Products Row 2 */}
-            <div className="products-row products-row-2">
-                <div className="product">
-                    <Link style={{textDecoration: "none"}} to={'/2024-hola-boomer-book'}>
-                        <img src="Images\product-5.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">2024 Hola Boomer Book</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
-                </div>
-                <div className="product">
-                    <Link style={{textDecoration: "none"}} to={'/content-marketing'}>
-                        <img src="Images\product-6.webp" className='product-img' alt="" />
-                        <div className="product-name pt-2">2024 Hello Boomer Book</div>
-                        <div className="product-price">$ 0,00</div>
-                    </Link>
-                    <button className='add-to-cart-button my-2'>Add to cart</button>
+
+            {/* Related Products */}
+            <div className="marketing-related-products">
+                <h3>Related Products</h3>
+
+                <div className="product-row-3">
+                    <div className="marketing-related-product" style={{marginLeft: "0"}}>
+                        <Link style={{textDecoration: "none"}} to={'/2024-hola-boomer-book'}>
+                            <img src="Images\product-5.webp" className='product-img' alt="" />
+                            <div className="product-name pt-2">2024 Hola Boomer Book</div>
+                            <div className="product-price">$ 0,00</div>
+                        </Link>
+                        <button className='add-to-cart-button my-2'>Add to cart</button>
+                    </div>
+                    <div className="marketing-related-product">
+                        <Link style={{textDecoration: "none"}} to={'/boomers-pen-for-events'}>
+                            <img src="Images\product-3.webp" className='product-img' alt="" />
+                            <div className="product-name pt-2">Boomers Pen for events</div>
+                            <div className="product-price">$ 0,00</div>
+                        </Link>
+                        <button className='add-to-cart-button my-2'>Add to cart</button>
+                    </div>
+                    <div className="marketing-related-product">
+                        <Link style={{textDecoration: "none"}} to={'/boomers-tote-bag'}>
+                            <img src="Images\product-2.webp" className='product-img' alt="" />
+                            <div className="product-name pt-2">Boomers Tote Bag</div>
+                            <div className="product-price">$ 0,00</div>
+                        </Link>
+                        <button className='add-to-cart-button my-2'>Add to cart</button>
+                    </div>
+                    <div className="marketing-related-product">
+                        <Link style={{textDecoration: "none"}} to={'/content-marketing'}>
+                            <img src="Images\product-6.webp" className='product-img' alt="" />
+                            <div className="product-name pt-2">2024 Hello Boomer Book</div>
+                            <div className="product-price">$ 0,00</div>
+                        </Link>
+                        <button className='add-to-cart-button my-2'>Add to cart</button>
+                    </div>
                 </div>
             </div>
 
 
+            
             {/* Section-6 (Mail Submition)*/}
             <div className="Section-6-bg pt-3"><div className='Section-6-bg-img'></div></div>
             <div className="Section-6-wrap">
-                <div className="mail-submit-marketing py-5">
+                <div className="mail-submit-marketing-product py-5">
                     <div className='section-6-img mt-2'><img src="Icons\envelope-open-text-solid.svg" alt="" /></div>
                     <div className="Section-6-text ms-4 me-2">
                         <h5>Subsribe To Our Newsletter</h5>
@@ -220,9 +225,8 @@ const Marketing = () => {
                     <div className='footer-sec-3-right'>Design by: Stream Design Studio</div>
                 </div>
             </div>
-
         </>
     )
 }
 
-export default Marketing
+export default BoomersBuisnessCard

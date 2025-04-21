@@ -63,9 +63,9 @@ const GetContracted = () => {
 
             {/* Nav-Bar */}
             <div className="landing-page-nav-bar mx-5 px-5">
-                <div className='mx-3'>
+                <Link to={'/'} className='mx-3'>
                     <img src="Images\logo.svg" alt="" />
-                </div>
+                </Link>
                 <div className='d-flex landing-page-nav-bar-Links my-5'>
                     <Link to={'/about'} className='mx-2 marketing-page-nav-bar-link'>ABOUT</Link>
                     <Link to={'/medicare-plan'} className='mx-2 marketing-page-nav-bar-link'>MEDICARE PLAN</Link>
@@ -169,7 +169,9 @@ const GetContracted = () => {
                         <div className="overlay" onClick={() => setIsOpen(false)} />
                         <div className="popup">
                             <div className="popup-scroll">
-
+                                <div  onClick={() => setIsOpen(false)} className='get-contracted-popup-close'>
+                                    <img src="Icons\xmark-solid.svg" alt="" />
+                                </div>
                                 <h3>Online Contracting System</h3>
                                 <p className='py-4'>Welcome to Boomers insurance Online Contracting System, powered by SuranceBay. We are pleased to provide agents an opportunity to contract with multiple Medicare carriers with one-click and at their convenience.</p>
                                 <p>The online contracting process is simple and easy! To prepare for your contracting process, you will need to have a copy of your E&O insurance (PDF format recommended), a copy of a voided check (PDF format recommended), and your state license number(s).</p>
