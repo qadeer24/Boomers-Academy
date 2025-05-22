@@ -63,6 +63,7 @@
     position: absolute;
     top: 3rem;
     left: 14rem;
+    z-index: 100;
 }
 
 .Login-Wrap-before {
@@ -84,11 +85,14 @@
 
 .login-close {
     width: 1.5vw;
-    margin-left: 25.5rem;
-    margin-bottom: 7vh;
+    margin-left: 9.5rem;
+    margin-bottom: 1vh;
     cursor: pointer;
 }
-
+.no-scroll {
+    height: 100vh;
+  overflow: hidden;
+}
 .Signup-close {
     width: 1.5vw;
     cursor: pointer;
@@ -216,6 +220,19 @@
     background-color: transparent;
     background-image: linear-gradient(194deg, #000000 0%, #4B2E2E96 85%);
     opacity: 0.81;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.hero-overlay-active {
+    position: absolute;
+    /* Stays in place */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 98.9vw;
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(194deg, #000000 0%, #4B2E2E96 85%);
+    opacity: 1;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
@@ -756,8 +773,6 @@
 }
 
 .Section-6 {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 653vh;
 }
@@ -1197,78 +1212,81 @@ input:checked+.slider:before {
     margin-bottom: 7rem;
 }
 
-.product-row-3{
+.product-row-3 {
     display: flex;
     margin-top: 1rem;
 }
 
 .mail-submit-marketing {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 214vh;
 }
 
-.mail-submit-marketing img {
-    height: 6vh;
-}
 /* Marketing Products */
-.marketing-product{
+.marketing-product {
     display: flex;
     margin: 5rem 7rem;
 }
-.marketing-product-img img{
+
+.marketing-product-img img {
     width: 35rem;
 }
-.marketing-product-text{
+
+.marketing-product-text {
     margin-left: 3rem;
 }
-.marketing-product-text p{
+
+.marketing-product-text p {
     font-size: 14.8px;
     color: #AEAEAE;
 }
-.marketing-product-text h3{
-    margin: 1rem 0; 
+
+.marketing-product-text h3 {
+    margin: 1rem 0;
 }
-.marketing-product-text h4{
-    font-weight: 600; 
+
+.marketing-product-text h4 {
+    font-weight: 600;
     font-size: 24px;
     color: #4C4C4C;
 }
-.marketing-product-uncategorized-link{
+
+.marketing-product-uncategorized-link {
     text-decoration: none;
     color: #EC1C27;
     font-weight: 500;
 }
-.marketing-product-text-Link{
+
+.marketing-product-text-Link {
     color: #AEAEAE;
     text-decoration: none;
 }
-.marketing-product-line{
+
+.marketing-product-line {
     height: 1px;
     width: 100%;
     background-color: #ccc;
 }
-.marketing-related-products{
+
+.marketing-related-products {
     margin: 5rem 7rem;
 }
-.marketing-related-products h3{
+
+.marketing-related-products h3 {
     font-weight: 600;
 }
-.marketing-related-product{
+
+.marketing-related-product {
     margin: 0 0.6rem;
 }
-.marketing-related-product img{
+
+.marketing-related-product img {
     width: 17rem;
 }
+
 .mail-submit-marketing-product {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 228vh;
-}
-.mail-submit-marketing-product img {
-    height: 6vh;
 }
 
 
@@ -1309,7 +1327,12 @@ input:checked+.slider:before {
     color: #3A3A3A;
     padding: 5px 10px;
     margin-left: 5px;
+    border-radius: 25px;
     display: flex;
+}
+.negative-z-index{
+    position: relative;
+    z-index: -1;
 }
 
 .medicare-dropdown-button-text {
@@ -1484,15 +1507,19 @@ input:checked+.slider:before {
     margin-bottom: 0.1rem;
 }
 
-.mail-submit-medicare {
+.mail-submit {
     display: flex;
     padding-left: 9vw;
-    position: absolute;
-    top: 297vh;
 }
 
-.mail-submit-medicare img {
+.mail-submit img {
     height: 6vh;
+}
+
+
+.mail-submit-medicare {
+    position: absolute;
+    top: 297vh;
 }
 
 .rows:hover .row {
@@ -1630,14 +1657,8 @@ input:checked+.slider:before {
 }
 
 .mail-submit-training {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 335vh;
-}
-
-.mail-submit-training img {
-    height: 6vh;
 }
 
 .training-course-grid {
@@ -1687,14 +1708,11 @@ input:checked+.slider:before {
 }
 
 .mail-submit-training-grid {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 253vh;
 }
-
-.mail-submit-training-grid img {
-    height: 6vh;
+.sec-6-training{
+    margin-top: 2rem;
 }
 
 /* About page */
@@ -1705,7 +1723,9 @@ input:checked+.slider:before {
 .about-video {
     margin-left: 12rem;
     width: 50rem;
+    position: relative;
     height: 32rem;
+    z-index: -2;
 }
 
 .about-overlay {
@@ -1718,6 +1738,7 @@ input:checked+.slider:before {
     -webkit-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: 1px -1px 28px 0px rgba(0, 0, 0, 0.11);
     padding: 3rem 2rem;
+    z-index: -1;
 }
 
 .about-overlay h3,
@@ -1738,29 +1759,16 @@ h4 {
 }
 
 .mail-submit-about {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 169vh;
-}
-
-.mail-submit-about img {
-    height: 6vh;
 }
 
 
 /* Get contracted page */
 .mail-submit-get-contracted {
-    display: flex;
-    padding-left: 9vw;
     position: absolute;
     top: 48vh;
 }
-
-.mail-submit-get-contracted img {
-    height: 6vh;
-}
-
 .app {
     position: relative;
     z-index: 0;
@@ -1791,12 +1799,7 @@ h4 {
     height: 100vh;
     text-align: center;
 }
-.popup h3{
-    font-weight: 600;
-}
-.popup p{
-    font-size: 16px;
-}
+
 .popup-scroll {
     overflow-y: auto;
     max-height: 100vh;
@@ -1804,18 +1807,55 @@ h4 {
     z-index: 1;
     position: relative;
 }
-.get-contracted-button{
+
+.popup h3 {
+    font-weight: 600;
+}
+
+.popup p {
+    font-size: 16px;
+}
+
+
+
+.get-contracted-button {
     background-color: #EC1C27;
     padding: 10px 30px;
     color: #fff;
     border: none;
     border-radius: 25px;
 }
-.get-contracted-popup-close img{
+
+.get-contracted-popup-close img {
     width: 14px;
     margin-left: 37.5rem;
     cursor: pointer;
 }
+
+.medicare-dropdown {
+    display: flex;
+}
+
+.goToGrid {
+    display: none;
+}
+
+.goToList {
+    display: block;
+}
+
+.training-course-grid-page {
+    display: flex;
+}
+
+.training-search-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.products-responsive-row{
+    display: flex;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1847,6 +1887,7 @@ h4 {
     .header-landing-page {
         height: 6vh;
         justify-content: normal;
+        width: 100%;
     }
 
     .Registration-Header-Right-Side {
@@ -1900,7 +1941,7 @@ h4 {
 
     /* Hamburger Icon */
     .hamburger {
-        margin-left: 46vw;
+        margin-left: 39vw;
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -1909,23 +1950,17 @@ h4 {
         background-color: #fff;
         padding: 13px 17px;
         border-radius: 3px;
+        background: none;
     }
 
-    .hamburger span {
+    .hamburger img {
+        height: 50px;
+        width: 50px;
         transition: 0.3s;
+        background-color: #eeeeee;
+        padding: 10px;
     }
 
-    .close-navbar {
-        height: 2.5vh;
-        width: 4vw;
-        background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\bars-solid.svg');
-    }
-
-    .open-navbar {
-        height: 2.5vh;
-        width: 4vw;
-        background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\xmark-solid.svg');
-    }
 
     /* Navigation Menu */
     .menu {
@@ -2141,7 +2176,7 @@ h4 {
 
     .footer-sec-1 {
         display: block;
-        height: 175vh;
+        height: 76rem;
     }
 
     .footer-sec-1-col-1 {
@@ -2171,7 +2206,7 @@ h4 {
     }
 
     .footer-sec-2 {
-        height: 225vh;
+        height: 101rem;
     }
 
     .footer-sec-3 {
@@ -2188,8 +2223,227 @@ h4 {
         margin-right: 0vw;
         text-align: center;
     }
-}
 
+
+    .video-container {
+        margin: 0;
+    }
+
+    .about-video {
+        margin-left: 1.5rem;
+        width: 89%;
+        height: 17rem;
+    }
+
+    .about-overlay {
+        top: 65vh;
+        width: 89%;
+        margin-left: 1.5rem;
+        height: 33.5rem;
+        text-align: center;
+    }
+
+    .about-overlay h4 {
+        font-weight: 500;
+    }
+
+    .about-overlay-line {
+        height: 2px;
+        width: 33%;
+        margin-left: 5rem;
+        background-color: #000;
+    }
+
+    .Section-6-bg-about {
+        margin-top: 79vh;
+        height: 45vh;
+    }
+
+    .mail-submit-about {
+        top: calc(-32vh - 100px);
+        /* A different adjustment for mobile */
+        /* top: -400px; */
+        display: block;
+    }
+
+    .mail-submit-about img {
+        height: 5vh;
+        padding-bottom: 3px;
+    }
+
+    .mail-submit-get-contracted {
+        top: calc(-32vh - 110px);
+        /* A different adjustment for mobile */
+        /* top: -400px; */
+        display: block;
+    }
+
+    .mail-submit-get-contracted img {
+        height: 6vh;
+        padding-bottom: 3px;
+        margin-right: 15px;
+    }
+
+    .medicare-heading h1 {
+        font-size: 30px;
+    }
+
+    .medicare-heading p {
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0 2rem;
+    }
+
+    .medicare-search-bar {
+        width: 9.6rem;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+
+    .medicare-dropdown {
+        display: grid;
+        margin-right: 1.5rem;
+    }
+
+    .medicare-table {
+        overflow-y: auto;
+        max-height: 180vh;
+        width: 24rem;
+        z-index: 1;
+        position: relative;
+        left: -1.3rem;
+    }
+
+    .medicare-heading {
+        margin: 4rem 0;
+    }
+
+    .medicare-sec-6-wrap {
+        padding-top: 9rem;
+    }
+
+    .popup {
+        width: 27rem;
+    }
+
+    .get-contracted-popup-close img {
+        width: 14px;
+        margin-left: 17.5rem;
+    }
+
+    .getContracted-responsive {
+        display: block;
+    }
+
+    .getContracted {
+        display: none;
+    }
+
+    .get-contracted-sec-6-margin {
+        margin-top: 28rem;
+    }
+
+
+    .products-row-1 {
+        display: block;
+    }
+
+    .products-responsive-row {
+        display: flex;
+    }
+
+    .products-row {
+        margin: 0 1rem;
+    }
+
+    .product img {
+        width: 9rem;
+    }
+
+    .add-to-cart-button {
+        padding: 0.5rem 1rem;
+    }
+
+    .mail-submit-marketing {
+        top: calc(-32vh - 177px);
+        /* A different adjustment for mobile */
+        /* top: -400px; */
+        display: block;
+    }
+
+    .mail-submit-marketing img {
+        height: 6vh;
+        padding-bottom: 3px;
+        margin-right: 15px;
+    }
+
+    .marketing-Section-6-bg {
+        margin-top: 2rem;
+        padding-top: 6rem;
+    }
+
+    .training-container {
+        margin: 0 2rem;
+    }
+
+    .training-view-options {
+        display: none !important;
+    }
+
+    .goToGrid {
+        display: block;
+    }
+
+    .goToList {
+        display: none;
+    }
+
+    .training-course-grid-page {
+        display: grid;
+    }
+
+    .training-search-bar {
+        display: grid;
+    }
+
+    .training-dropdown-button {
+        margin-top: 1rem;
+    }
+
+    .training-course-grid {
+        width: 19rem;
+    }
+
+    .training-course-grid-img img {
+        width: 19rem;
+    }
+
+    .mail-submit-training {
+        top: calc(-32vh - 185spx);
+        display: block;
+    }
+
+    .sec-6-training {
+        padding-top: 7rem;
+    }
+
+    .mail-submit-medicare {
+        top: calc(-32vh - 185px);
+        display: block;
+    }
+
+    .row {
+        width: 376vw;
+    }
+
+    .col-1-header {
+        padding: 2rem 2rem;
+    }
+
+    .col-1 {
+        padding-left: 3rem;
+    }
+}
 
 @media (min-width: 1600px) {
     .header-landing-page {
@@ -2301,7 +2555,7 @@ h4 {
     }
 
     .Section-6 {
-        top: 538vh;
+        top: 520vh;
     }
 
     .footer-sec-1 {
@@ -2462,5 +2716,76 @@ h4 {
     .sec-2-img {
         height: 30vh;
         margin-bottom: 2vh;
+    }
+
+    .about-video {
+        width: 72rem;
+        height: 42rem;
+        margin-bottom: 5rem;
+    }
+
+    .about-overlay {
+        top: 44.7vh;
+        width: 33rem;
+        height: 43rem;
+        padding: 6rem 3rem;
+    }
+    .mail-submit-about {
+        top: 153vh;
+    }
+    .popup-scroll {
+        padding: 6rem 2rem;
+    }
+    .mail-submit-get-contracted {
+        top: 40vh;
+    }
+    .products-responsive-row{
+        display: flex;
+    }
+    .products-row {
+        width: 10rem;
+        margin: 2rem 18rem;
+    }
+    .mail-submit-marketing {
+        top: 135vh;
+    }
+    .training-course-img img{
+        width: 25rem;
+    }
+    .training-container{
+        margin: 0 22rem;
+    }
+    .mail-submit-training {
+        top: 292vh;
+    }
+    .mail-submit-training-grid{
+        top: 187vh;
+    }
+    .col-1 {
+        flex: 0 0 auto;
+        width: 14rem;
+    }
+    .col-2 {
+        flex: 0 0 auto;
+        width: 14rem;
+    }
+    .col-5 {
+        flex: 0 0 auto;
+        width: 60.6rem;
+    }
+    .col-6{
+        width: 11.2rem;
+    }
+    .col-5-header img {
+        margin-left: 42rem;
+    }
+    .data-col-2 {
+        padding-top: 2rem;
+    }
+    .mail-submit-medicare{
+        top: 215vh;
+    }
+    .medicare-heading p {
+        margin: 0 27rem;
     }
 }
