@@ -187,6 +187,7 @@
 
 .checkbox-text {
     font-size: 14px;
+    width: 23rem;
 }
 
 .checkbox-div {
@@ -233,7 +234,7 @@
     background-color: transparent;
     background-image: linear-gradient(194deg, #000000 0%, #4B2E2E96 85%);
     opacity: 1;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    transition: none !important;
 }
 
 .header-landing-page {
