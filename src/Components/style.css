@@ -43,7 +43,6 @@
     cursor: pointer;
     height: 18px;
     width: 18px;
-    /* background-image: url('\public\Icons\padlock.png'); */
     background-image: url('/public/Icons/padlock.png');
     margin-right: 10px;
     margin-top: 2px;
@@ -53,7 +52,6 @@
     cursor: pointer;
     height: 21px;
     width: 21px;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Exit.svg');
     background-image: url('/public/Icons/Exit.svg');
     margin-right: 10px;
 }
@@ -663,7 +661,7 @@
 .Section-4 {
     height: 75vh;
     width: 98.9vw;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\section-2-image-1.jpg');
+    background-image: url('/public/Images/section-2-image-1.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-color: #000;
@@ -786,7 +784,7 @@
 }
 
 .Section-6-bg-img {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\logo.svg');
+    background-image: url('/public/Images/logo.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 22vw;
@@ -951,7 +949,7 @@
     height: 8vh;
     width: 4vw;
     border-radius: 50%;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\demo-worker.png');
+    background-image: url('/public/Images/demo-worker.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -960,7 +958,7 @@
     height: 6.5vh;
     width: 3.3vw;
     border-radius: 50%;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\demo-worker.png');
+    background-image: url('/public/Images/demo-worker.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -1027,7 +1025,7 @@
 }
 
 .default-profile-logo {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\Profile-default.svg');
+    background-image: url('/public/Images/Profile-default.svg');
     background-size: cover;
     height: 18px;
     width: 18px;
@@ -1035,7 +1033,7 @@
 }
 
 .profile-option:hover .default-profile-logo {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\profile-hover.svg');
+    background-image: url('/public/Icons/profile-hover.svg');
 }
 
 .Websites-options {
@@ -1059,7 +1057,7 @@
 }
 
 .website-1-logo {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\logo.svg');
+    background-image: url('/public/Images/logo.svg');
     background-size: cover;
     height: 3.5vh;
     width: 2vw;
@@ -1068,7 +1066,7 @@
 }
 
 .website-2-logo {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Images\logo-insurance.svg');
+    background-image: url('/public/Images/logo-insurance.svg');
     background-size: cover;
     height: 3.5vh;
     width: 2vw;
@@ -1095,7 +1093,7 @@
 }
 
 .dark-mode-toggle-btn-img {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Dark-mode.svg');
+    background-image: url('/public/Icons/Dark-mode.svg');
     background-size: cover;
     height: 3.5vh;
     width: 1.5vw;
@@ -1109,6 +1107,7 @@
 
 .dark-mode-toggle-btn:hover .dark-mode-toggle-btn-img {
     background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Dark-mode-hover.svg');
+    background-image: url('/public/Icons//Dark-mode-hover.svg');
 }
 
 .switch {
