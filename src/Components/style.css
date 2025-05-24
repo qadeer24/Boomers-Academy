@@ -1106,7 +1106,6 @@
 }
 
 .dark-mode-toggle-btn:hover .dark-mode-toggle-btn-img {
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Dark-mode-hover.svg');
     background-image: url('/public/Icons//Dark-mode-hover.svg');
 }
 
