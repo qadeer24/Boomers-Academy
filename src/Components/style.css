@@ -27,7 +27,7 @@
 .Registration-Header-Right-Side-img {
     height: 20px;
     width: 20px;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\phone-solid.svg');
+    background-image: url('/public/Icons/phone-solid.svg');
     margin-right: 10px;
     margin-top: 2px;
 }
@@ -43,7 +43,8 @@
     cursor: pointer;
     height: 18px;
     width: 18px;
-    background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\padlock.png');
+    /* background-image: url('\public\Icons\padlock.png'); */
+    background-image: url('/public/Icons/padlock.png');
     margin-right: 10px;
     margin-top: 2px;
 }
@@ -53,6 +54,7 @@
     height: 21px;
     width: 21px;
     background-image: url('F:\Websites\React JS\boomers-academy\public\Icons\Exit.svg');
+    background-image: url('/public/Icons/Exit.svg');
     margin-right: 10px;
 }
 
