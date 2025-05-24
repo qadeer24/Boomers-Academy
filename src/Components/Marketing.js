@@ -9,20 +9,24 @@ const Marketing = ({LoginisActive, SignUpisActive, LoginClick, SignUpClick, over
     return (
         <>
             {/* Header */}
-            <Header
-                overlayIsActive={overlayIsActive}
-                LoginisActive={LoginisActive}
-                SignUpisActive={SignUpisActive}
-                LoginClick={LoginClick}
-                SignUpClick={SignUpClick}
-            />
+            <header>
+                <Header
+                    overlayIsActive={overlayIsActive}
+                    LoginisActive={LoginisActive}
+                    SignUpisActive={SignUpisActive}
+                    LoginClick={LoginClick}
+                    SignUpClick={SignUpClick}
+                />
+            </header>
 
             <main>
                 {children}
             </main>
 
             {/* Footer */}
-            <Footer/>
+            <footer>
+                <Footer/>
+            </footer>
 
         </>
     )
