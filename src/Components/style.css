@@ -43,7 +43,6 @@
     cursor: pointer;
     height: 18px;
     width: 18px;
-    /* background-image: url('\/public/Icons/padlock.png'); */
     background-image: url('/public/Icons/padlock.png');
     margin-right: 10px;
     margin-top: 2px;
@@ -53,7 +52,6 @@
     cursor: pointer;
     height: 21px;
     width: 21px;
-    background-image: url('/public/Icons/Exit.svg');
     background-image: url('/public/Icons/Exit.svg');
     margin-right: 10px;
 }

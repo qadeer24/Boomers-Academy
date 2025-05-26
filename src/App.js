@@ -37,8 +37,6 @@ function App() {
     }
   }, [SignUpisActive, LoginisActive]);
 
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <Router>
       <Routes>

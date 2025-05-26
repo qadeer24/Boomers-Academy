@@ -1,9 +1,6 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MailSubmition from "./MailSubmition";
-import Header from "./Headers/Header";
-import Footer from "./Footer";
 import Layout from "../layouts/Layout";
 
 const Marketing = ({
