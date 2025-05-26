@@ -89,10 +89,12 @@
     margin-bottom: 1vh;
     cursor: pointer;
 }
+
 .no-scroll {
     height: 100vh;
-  overflow: hidden;
+    overflow: hidden;
 }
+
 .Signup-close {
     width: 1.5vw;
     cursor: pointer;
@@ -223,6 +225,7 @@
     opacity: 0.81;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
+
 .hero-overlay-active {
     position: absolute;
     /* Stays in place */
@@ -1106,7 +1109,7 @@
 }
 
 .dark-mode-toggle-btn:hover .dark-mode-toggle-btn-img {
-    background-image: url('/public/Icons//Dark-mode-hover.svg');
+    background-image: url('/public/Icons/Dark-mode-hover.svg');
 }
 
 .switch {
@@ -1331,7 +1334,8 @@ input:checked+.slider:before {
     border-radius: 25px;
     display: flex;
 }
-.negative-z-index{
+
+.negative-z-index {
     position: relative;
     z-index: -1;
 }
@@ -1712,7 +1716,8 @@ input:checked+.slider:before {
     position: absolute;
     top: 253vh;
 }
-.sec-6-training{
+
+.sec-6-training {
     margin-top: 2rem;
 }
 
@@ -1770,6 +1775,7 @@ h4 {
     position: absolute;
     top: 48vh;
 }
+
 .app {
     position: relative;
     z-index: 0;
@@ -1853,7 +1859,8 @@ h4 {
     display: flex;
     justify-content: space-between;
 }
-.products-responsive-row{
+
+.products-responsive-row {
     display: flex;
 }
 
@@ -2731,61 +2738,79 @@ h4 {
         height: 43rem;
         padding: 6rem 3rem;
     }
+
     .mail-submit-about {
         top: 153vh;
     }
+
     .popup-scroll {
         padding: 6rem 2rem;
     }
+
     .mail-submit-get-contracted {
         top: 40vh;
     }
-    .products-responsive-row{
+
+    .products-responsive-row {
         display: flex;
     }
+
     .products-row {
         width: 10rem;
         margin: 2rem 18rem;
     }
+
     .mail-submit-marketing {
         top: 135vh;
     }
-    .training-course-img img{
+
+    .training-course-img img {
         width: 25rem;
     }
-    .training-container{
+
+    .training-container {
         margin: 0 22rem;
     }
+
     .mail-submit-training {
         top: 292vh;
     }
-    .mail-submit-training-grid{
+
+    .mail-submit-training-grid {
         top: 187vh;
     }
+
     .col-1 {
         flex: 0 0 auto;
         width: 14rem;
     }
+
     .col-2 {
         flex: 0 0 auto;
         width: 14rem;
     }
+
     .col-5 {
         flex: 0 0 auto;
         width: 60.6rem;
     }
-    .col-6{
+
+    .col-6 {
         width: 11.2rem;
     }
+
     .col-5-header img {
         margin-left: 42rem;
     }
+
     .data-col-2 {
         padding-top: 2rem;
     }
-    .mail-submit-medicare{
+
+    .mail-submit-medicare {
         top: 215vh;
     }
+
     .medicare-heading p {
         margin: 0 27rem;
     }
